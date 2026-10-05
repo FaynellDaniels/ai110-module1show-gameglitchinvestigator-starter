@@ -12,9 +12,18 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 
 Document at least 3 bugs you found. Add rows as needed.
 
-| Input | Expected Behavior | Actual Behavior | Console Output / Error |
-|-------|-------------------|-----------------|------------------------|
-| | | | |
+| Input    | Expected Behavior | Actual Behavior | Console Output / Error |
+| -------- | ----------------- | --------------- | ---------------------- |
+| Negative | The game should   |
+
+          reject the input a
+          nd ask for a valid
+          number within the
+          allowed range.
+
+|number,|
+|such as|
+| -5 |
 | | | | |
 | | | | |
 
