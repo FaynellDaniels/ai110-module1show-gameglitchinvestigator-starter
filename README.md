@@ -25,30 +25,40 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- The purpose of the game is to have the player guess a randomly generated secret number within a selected difficulty range. The player receives higher or lower hints after each guess and has a limited number of attempts to find the correct number. I found several bugs in the game, including negative numbers being accepted as guesses, the game not restarting without reloading, the normal and hard number ranges being switched, the attempt limits for easy and normal being switched, and the game giving the wrong higher/lower hints when comparing the guess to the secret number. I fixed two of these bugs: the incorrect higher/lower hints and the input validation that allowed negative numbers. I also tested the fixes with pytest and by entering different guesses in the game to make sure the changes worked correctly.
 
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. User enters a guess of 12.
+2. Game returns "Go HIGHER."
+3. User enters a guess of 20.
+4. Game returns "Go LOWER."
+5. User enters a guess of 15.
+6. Game returns "Go LOWER."
+7. User enters a guess of 11.
+8. Game returns "Go HIGHER."
+9. User enters a guess of 14.
+10. Game returns "Go LOWER."
+11. The user runs out of attempts, and the game displays "Out of attempts. The secret was 13."
 
-**Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 
 ## 🧪 Test Results
 
 ```
-# Paste your pytest output here, e.g.:
-# pytest tests/
-# ========================= X passed in 0.XXs =========================
+# pytest output:
+================================== test session starts ===================================
+platform darwin -- Python 3.14.3, pytest-9.1.1, pluggy-1.6.0
+rootdir: /Users/nellie/Documents/ai110-module1show-gameglitchinvestigator-starter
+plugins: anyio-4.15.1
+collected 10 items                                                                       
+
+tests/test_game_logic.py ......                                                    [100%]
+
+=================================== 10 passed in 0.03s ===================================
 ```
 
-## 🚀 Stretch Features
 
-- [ ] [If you choose to complete Challenge 4, describe the Enhanced UI changes here — a screenshot is optional]
+
+
