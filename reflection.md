@@ -14,17 +14,9 @@ Document at least 3 bugs you found. Add rows as needed.
 
 | Input    | Expected Behavior | Actual Behavior | Console Output / Error |
 | -------- | ----------------- | --------------- | ---------------------- |
-| Negative | The game should   |
-
-          reject the input a
-          nd ask for a valid
-          number within the
-          allowed range.
-
-|number,|
-|such as|
-| -5 |
-| | | | |
+| Negative number, such as -5 | The game should reject the input and ask for a valid number within the allowed range.| The game accepts -5 as a guess and continues the game.|No error; negative guess is accepted.|Input validation / guess validation function|
+|Guess higher than the target number, such as target 40 and guess 60|
+| | | | |  |                 |
 | | | | |
 
 ---
