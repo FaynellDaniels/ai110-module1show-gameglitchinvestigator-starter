@@ -5,8 +5,17 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 ## 1. What was broken when you started?
 
 - What did the game look like the first time you ran it?
+  
+  The game opened as a basic number-guessing game where I could select a difficulty and enter guesses. It displayed the number of attempts and gave me a message after each guess telling me whether I should go higher or lower.
+  
 - List at least two concrete bugs you noticed at the start  
   (for example: "the hints were backwards").
+  
+- The game would tell me to go lower even when my guess was lower than the target.
+- The game allowed negative numbers to be entered as guesses even though they were outside the valid range.
+- The normal and hard difficulty number ranges were switched.
+- The attempt limits for the easy and normal difficulties were switched.
+- The game would not start a new game without reloading the application.
 
 **Bug Reproduction Log**
 
