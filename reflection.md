@@ -15,7 +15,7 @@ Document at least 3 bugs you found. Add rows as needed.
 | Input    | Expected Behavior | Actual Behavior | Console Output / Error |
 | -------- | ----------------- | --------------- | ---------------------- |
 | Negative number, such as -5 | The game should reject the input and ask for a valid number within the allowed range.| The game accepts -5 as a guess and continues the game.|No error; negative guess is accepted.|Input validation / guess validation function|
-|Guess higher than the target number, such as target 40 and guess 60|The game should tell the player that the guess is too high and to go lower.|The game gives the incorrect direction/hint even though the guess is higher than the target.|Incorrect "go lower" or direction output.|check_guess / guess comparison logic|
+|Guess higher than the target number, such as target 40 and guess 30|The game should tell the player that the guess is too low and to go higher.|The game gives the incorrect direction/hint even though the guess is lower than the target.|Incorrect "go lower" or direction output.|check_guess / guess comparison logic|
 
 | Game completed, then choosing to play again.|A new game should start with a new number and reset attempts.|The game does not restart unless the page is reloaded.|No console error; game remains in the previous state.|Game restart/reset function|
 
